@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <title>The Simon Game</title>
+  </head>
+  <body>
+    <div id="clickblocker"></div>
+    <h1 class="press-start-2p-regular">The Simon Game</h1>
+    <div class="instructions">
+      <ol class="press-start-2p-regular">
+        <li>Press the <em>play</em> button to begin.</li>
+        <li>One square will flash and the game has begun.</li>
+        <li>After you have pressed it, another will flash. Maybe the same one, maybe a different one.</li>
+        <li>Now, press the first again and follow up with the one that flashed afterwards.</li>
+        <li>Keep adding to the sequence!</li>
+        <li>If you press the wrong square in order, the game is over. But you can begin again by clicking Start Again.</li>
+      </ol>
+      <button class="press-start-2p-regular play">Play!</button>
+    </div>
+    <div class="container">
+      <div id="green" class="square"></div>
+      <div id="red" class="square"></div>
+      <div id="yellow" class="square"></div>
+      <div id="blue" class="square"></div>
+    </div>
+
+    <div id="countdown">
+      <p class="press-start-2p-regular hidden">3</p>
+      <p class="press-start-2p-regular hidden">2</p>
+      <p class="press-start-2p-regular hidden">1</p>
+    </div>
+
+    <div class="buttons hidden">
+      <button class="press-start-2p-regular instr">Instructions</button>
+      <button class="press-start-2p-regular replay">Start Again</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>
